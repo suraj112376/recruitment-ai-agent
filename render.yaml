@@ -7,7 +7,7 @@ services:
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: HUGGINGFACE_API_KEY
-        value:"REPLACE_ME"
+        value: "REPLACE_ME"
 
   - type: web
     name: recruitment-ai-agent-frontend
